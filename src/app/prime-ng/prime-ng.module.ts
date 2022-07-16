@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'primeng/calendar';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
+import { GalleriaModule } from 'primeng/galleria';
 import { ImageModule } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenuModule } from 'primeng/menu';
@@ -22,6 +23,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
     CalendarModule,
     CardModule,
     DropdownModule,
+    GalleriaModule,
     ImageModule,
     InputTextModule,
     MenuModule,
@@ -30,6 +32,6 @@ import { TabMenuModule } from 'primeng/tabmenu';
     ProgressSpinnerModule,
     RippleModule,
     TabMenuModule,
-  ]
+  ],
 })
-export class PrimeNgModule { }
+export class PrimeNgModule {}

@@ -9,9 +9,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgParticlesModule } from 'ng-particles';
 import { SharedModule } from './shared/shared.module';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

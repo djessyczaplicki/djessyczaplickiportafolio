@@ -1,17 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
-  margin: 10px;
-  background-color: var(--surface-b);
-  font-family: var(--font-family);
-}
-
-.text-layout {
   color: var(--text-color);
+  margin: 10px;
+  font-family: var(--font-family);
 }
 
 .text-layout a {
   color: var(--primary-color);
+}
+
+.on-top {
+  z-index: 1;
+}
+
+canvas {
+  z-index: -1;
+}
+
+#tsparticles {
+  position: relative;
+  z-index: -1;
 }
 
 .header {

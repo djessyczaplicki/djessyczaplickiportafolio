@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { LocalStorageService } from './services/local-storage.service';
 import {
@@ -19,8 +19,11 @@ import { loadFull } from 'tsparticles';
 })
 export class AppComponent implements OnInit {
   selectedLanguage: string = '';
+  imageUrl =
+    'https://media-exp1.licdn.com/dms/image/C4E03AQEoRHS-fpsEXQ/profile-displayphoto-shrink_800_800/0/1656419050430?e=1663200000&v=beta&t=KAFELlhY8Dp77NHq-dlfwGH6xYbYbeVYc3XJv5E9WzM';
 
   components!: MenuItem[];
+  @ViewChild('particles') particles!: ElementRef;
 
   ngOnInit(): void {
     this.components = [
@@ -45,6 +48,9 @@ export class AppComponent implements OnInit {
         .get(component.label!)
         .subscribe((text) => (component.label = text))
     );
+
+    let el = this.particles.nativeElement;
+    el.setAttribute('style', 'z-index: -1');
   }
 
   constructor(
@@ -63,18 +69,20 @@ export class AppComponent implements OnInit {
 
   id = 'tsparticles';
 
-  /* or the classic JavaScript object */
   particlesOptions = {
+    fullscreen: {
+      enable: false,
+    },
     background: {
       color: {
-        value: '#0d47a1',
+        value: '#17212f',
       },
     },
     fpsLimit: 120,
     interactivity: {
       events: {
         onClick: {
-          enable: true,
+          enable: false,
           mode: ClickMode.push,
         },
         onHover: {
@@ -88,7 +96,7 @@ export class AppComponent implements OnInit {
           quantity: 4,
         },
         repulse: {
-          distance: 200,
+          distance: 100,
           duration: 0.4,
         },
       },
@@ -114,7 +122,7 @@ export class AppComponent implements OnInit {
           default: OutMode.bounce,
         },
         random: false,
-        speed: 6,
+        speed: 2,
         straight: false,
       },
       number: {
@@ -122,7 +130,7 @@ export class AppComponent implements OnInit {
           enable: true,
           area: 800,
         },
-        value: 80,
+        value: 50,
       },
       opacity: {
         value: 0.5,
