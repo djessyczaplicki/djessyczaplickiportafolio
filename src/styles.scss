@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 10px;
+  background-color: var(--surface-b);
+  font-family: var(--font-family);
+}
+
+.text-layout {
+  color: var(--text-color);
+}
+
+.text-layout a {
+  color: var(--primary-color);
+}
+
+.header {
+  font-size: 30px;
+  color: var(--teal-300);
+}
+
+.title {
+  font-size: 60px;
+  color: var(--primary-200);
+}
+
+.subtitle {
+  font-size: 40px;
+  color: var(--primary-600);
+}

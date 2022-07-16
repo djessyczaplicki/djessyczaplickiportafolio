@@ -1,3 +1,25 @@
+<!-- particles.js container -->
+<ng-particles
+  [id]="id"
+  [options]="particlesOptions"
+  [particlesInit]="particlesInit"
+  (particlesLoaded)="particlesLoaded($event)"
+></ng-particles>
 
-<p-dropdown [options]="translate.getLangs()" [placeholder]="translate.defaultLang" 
-(onChange)="switchLanguage($event.value)"></p-dropdown>
+<div class="grid justify-content-center">
+  <div class="mt-3 col-12 md:col-9 lg:col-6 xl:col-4">
+    <h4 class="header m-2 mb-0">{{ "i-am" | translate }}</h4>
+    <h1 class="title m-2 mt-0 pt-0">{{ "fullname" | translate }},</h1>
+    <h2 class="subtitle m-2">{{ "android-dev" | translate }}</h2>
+  </div>
+</div>
+
+<div class="grid mt-5">
+  <p-tabMenu [model]="components" class="col-11"> </p-tabMenu>
+  <p-dropdown
+    class="col"
+    [options]="translate.getLangs()"
+    [placeholder]="translate.defaultLang"
+    (onChange)="switchLanguage($event.value)"
+  ></p-dropdown>
+</div>
