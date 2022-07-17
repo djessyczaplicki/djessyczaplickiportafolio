@@ -11,9 +11,11 @@ import { NgParticlesModule } from 'ng-particles';
 import { SharedModule } from './shared/shared.module';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
+import { BioComponent } from './pages/bio/bio.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, HorizontalCardComponent],
+  declarations: [AppComponent, ProjectsComponent, HorizontalCardComponent, BioComponent, ContactComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
+  scroll-behavior: smooth;
   color: var(--text-color);
   margin: 10px;
   font-family: var(--font-family);
@@ -8,10 +9,6 @@ body {
 
 .text-layout a {
   color: var(--primary-color);
-}
-
-.on-top {
-  z-index: 1;
 }
 
 canvas {
@@ -24,26 +21,34 @@ canvas {
 }
 
 .header {
-  font-size: 2em;
+  font-size: 2rem;
   color: var(--teal-300);
 }
 
 .title {
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--primary-200);
 }
 
 .subtitle {
-  font-size: 3em;
+  font-size: 3rem;
   color: var(--primary-600);
 }
 
 .card-header {
   display: block;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5rem;
 }
 
 .card-content {
-  font-size: 1.5em;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--blue-700);
 }

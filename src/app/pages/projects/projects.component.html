@@ -1,24 +1,22 @@
 <h1>{{ "projects" | translate }}</h1>
 
-<div class="flex m-4">
+<div class="flex flex-wrap m-1 lg:m-4 project">
   <app-horizontal-card *ngFor="let project of projects" class="col-12 lg:col-6">
     <ng-container image>
       <p-galleria
         [value]="project.images"
         [responsiveOptions]="responsiveOptions"
-        [containerStyle]="{ 'max-width': '500px' }"
-        [numVisible]="2"
+        [numVisible]="3"
       >
         <ng-template pTemplate="item" let-item>
-          <img [src]="item" style="width: 100%; display: block" />
+          <img
+            [src]="item"
+            style="height: 500px; max-width: 100%; display: block"
+          />
         </ng-template>
         <ng-template pTemplate="thumbnail" let-item>
           <div class="grid grid-nogutter justify-content-center">
-            <img
-              [src]="item"
-              style="display: block"
-              style="max-height: 300px"
-            />
+            <img [src]="item" style="display: block; max-height: 130px" />
           </div>
         </ng-template>
       </p-galleria>
@@ -29,10 +27,18 @@
       </h2>
     </ng-container>
     <ng-container content>
-      <p class="card-content">{{ project.description | translate }}</p>
-      <p class="card-content">
-        {{ project.features | translate }}
-      </p>
+      <div class="container">
+        <p class="card-content">{{ project.description | translate }}</p>
+        <p class="card-content">
+          <a [href]="project.github">
+            <i class="pi pi-github"></i> {{ "view-on-github" | translate }}
+          </a>
+        </p>
+        <p class="card-content underline">{{ "features" | translate }}:</p>
+        <p class="card-content">
+          {{ project.features | translate }}
+        </p>
+      </div>
     </ng-container>
   </app-horizontal-card>
 </div>

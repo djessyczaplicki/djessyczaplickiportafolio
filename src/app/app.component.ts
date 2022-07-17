@@ -19,8 +19,7 @@ import { loadFull } from 'tsparticles';
 })
 export class AppComponent implements OnInit {
   selectedLanguage: string = '';
-  imageUrl =
-    'https://media-exp1.licdn.com/dms/image/C4E03AQEoRHS-fpsEXQ/profile-displayphoto-shrink_800_800/0/1656419050430?e=1663200000&v=beta&t=KAFELlhY8Dp77NHq-dlfwGH6xYbYbeVYc3XJv5E9WzM';
+  imageUrl = './assets/img/image.jpeg';
 
   components!: MenuItem[];
   @ViewChild('particles') particles!: ElementRef;
@@ -28,19 +27,22 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.components = [
       {
-        label: 'bio',
+        label: 'Bio',
         icon: 'pi pi-fw pi-home',
-        routerLink: '/bio',
+        url: '#bio',
+        target: '_self',
       },
       {
-        label: 'projects',
+        label: 'Projects',
         icon: 'pi pi-fw pi-book',
-        routerLink: '/projects',
+        url: '#projects',
+        target: '_self',
       },
       {
-        label: 'contact',
+        label: 'Contact',
         icon: 'pi pi-fw pi-envelope',
-        routerLink: 'contact',
+        url: '#contact',
+        target: '_self',
       },
     ];
     this.components.forEach((component) =>
