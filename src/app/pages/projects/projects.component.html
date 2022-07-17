@@ -1,44 +1,38 @@
 <h1>{{ "projects" | translate }}</h1>
 
-<p-card
-  header="Advanced Card"
-  subheader="Card Subheader"
-  [style]="{ width: '360px' }"
-  styleClass="p-card-shadow"
->
-  <ng-template pTemplate="header">
-    <p-galleria [value]="images">
-      <ng-template pTemplate="item" let-item>
-        <img [src]="item" [alt]="item" />
-      </ng-template>
-      <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center">
-          <img [src]="item" />
-        </div>
-      </ng-template>
-    </p-galleria>
-  </ng-template>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-    consequuntur error repudiandae numquam deserunt quisquam repellat libero
-    asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-    neque quas!
-  </p>
-  <ng-template pTemplate="footer">
-    <p-button label="Save" icon="pi pi-check"></p-button>
-    <p-button
-      label="Cancel"
-      icon="pi pi-times"
-      styleClass="p-button-secondary"
-      [style]="{ 'margin-left': '.5em' }"
-    ></p-button>
-  </ng-template>
-</p-card>
-
-<p-image
-  *ngFor="let image of images"
-  [src]="image"
-  error
-  class="img mr-3 mt-3"
-  [preview]="true"
-></p-image>
+<div class="flex m-4">
+  <app-horizontal-card *ngFor="let project of projects" class="col-12 lg:col-6">
+    <ng-container image>
+      <p-galleria
+        [value]="project.images"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '500px' }"
+        [numVisible]="2"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img
+              [src]="item"
+              style="display: block"
+              style="max-height: 300px"
+            />
+          </div>
+        </ng-template>
+      </p-galleria>
+    </ng-container>
+    <ng-container header>
+      <h2 class="card-header">
+        {{ project.name | translate }}
+      </h2>
+    </ng-container>
+    <ng-container content>
+      <p class="card-content">{{ project.description | translate }}</p>
+      <p class="card-content">
+        {{ project.features | translate }}
+      </p>
+    </ng-container>
+  </app-horizontal-card>
+</div>

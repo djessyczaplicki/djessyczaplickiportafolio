@@ -3,6 +3,12 @@
   "contact": "Contact",
   "bio": "Bio",
   "fullname": "Djessy Czaplicki",
+  "group-calendar": "Group Calendar",
+  "group-calendar-description": "This app is what I built as my school end-term project. It's a cloud based calendar that manages synched events across groups of people that share the same events. Admins of the group can set and modify events, and the users of the group can see them, set reminders, and confirm their assistance.",
+  "group-calendar-features": "- Jetpack Compose - Kotlin - Clean Architecture - MVVM - Dependency Injection (Dagger Hilt) - Firebase RTDB and FCM - Retrofit - Rest API - Dark mode - Material 3 - ",
+  "deliicious": "Deliicious",
+  "deliicious-description": "This app was made as a group project with 3 classmates. Deliicious allows waiters to place orders with ease from the phone, and with the help of a Rest API, it sends the orders to the kitchen and track their state in real time from ordered to delivered to the table. Deliicious also comes with an ingredients storage management, which detects what ingredients an order needs and substract the quantity they need from the stock, enabling the managers to know when they are short on a product. You can also customise the layout of the tables in the restaurant on the home screen.",
+  "deliicious-features": "- Jetpack Compose - Kotlin - Clean Architecture - MVVM - Retrofit - Rest API - Dark Mode",
   "i-am": "My name is",
   "projects": "Projects",
   "title": "Djessy Czaplicki - Portafolio"

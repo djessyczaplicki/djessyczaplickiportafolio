@@ -10,9 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgParticlesModule } from 'ng-particles';
 import { SharedModule } from './shared/shared.module';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
 
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent],
+  declarations: [AppComponent, ProjectsComponent, HorizontalCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

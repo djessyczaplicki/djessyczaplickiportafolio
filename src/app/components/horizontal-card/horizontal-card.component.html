@@ -1,0 +1,9 @@
+<div class="flex flex-wrap p-card">
+  <div class="col-12 md:col-6">
+    <ng-content select="[image]"></ng-content>
+  </div>
+  <div class="grid col-12 md:col-6 text-justify p-4">
+    <ng-content select="[header]"></ng-content>
+    <ng-content sleep="[content]"></ng-content>
+  </div>
+</div>

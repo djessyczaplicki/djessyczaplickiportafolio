@@ -1,8 +1,10 @@
 {
   "android-dev": "Desarrollador Android",
   "contact": "Contacto",
-  "bio": "Biografía",
+  "bio": "Bio",
   "fullname": "Djessy Czaplicki",
+  "group-calendar": "Calendario de Grupo",
+  "group-calendar-description": "This app is what I built as my school end term project. It's a group and cloud based calendar. Admins of the group can set and modify events, and the users of the group can see them, set reminders, and confirm their assistance.",
   "i-am": "Me llamo",
   "projects": "Proyectos",
   "title": "Djessy Czaplicki - Portfolio"

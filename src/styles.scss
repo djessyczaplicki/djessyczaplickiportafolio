@@ -24,16 +24,26 @@ canvas {
 }
 
 .header {
-  font-size: 30px;
+  font-size: 2em;
   color: var(--teal-300);
 }
 
 .title {
-  font-size: 60px;
+  font-size: 4em;
   color: var(--primary-200);
 }
 
 .subtitle {
-  font-size: 40px;
+  font-size: 3em;
   color: var(--primary-600);
+}
+
+.card-header {
+  display: block;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.card-content {
+  font-size: 1.5em;
 }
