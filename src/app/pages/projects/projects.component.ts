@@ -23,6 +23,8 @@ export class ProjectsComponent {
         './assets/img/projects/groupcalendar1.png',
         './assets/img/projects/groupcalendar2.png',
         './assets/img/projects/groupcalendar3.png',
+        './assets/img/projects/groupcalendar4.png',
+        './assets/img/projects/groupcalendar5.png',
       ],
       description: 'group-calendar-description',
       features: 'group-calendar-features',

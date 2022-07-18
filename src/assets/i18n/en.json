@@ -4,6 +4,8 @@
   "bio": "Bio",
   "bio-content-1": "I am a recently graduated student who is searching for a job in the Android eco-system. I only have 3 months of professional experience with Spring and Angular (I've also made this entire webpage by myself with Angular), but I have been creating Android applications for a year and a half already, and I'm quite used to its mechanisms.",
   "bio-content-2": "I also really enjoy writing clean code and I am learning Solid principles, because I think making the code readable is the oposite of a waste of time. I have my projects on GitHub for you to have a glence if you want to.",
+  "curriculum-link": "./assets/pdf/en_djessyczaplicki.pdf",
+  "download-curriculum": "Download curriculum",
   "features": "Features",
   "fullname": "Djessy Czaplicki",
   "group-calendar": "Group Calendar",

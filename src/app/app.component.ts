@@ -19,7 +19,7 @@ import { loadFull } from 'tsparticles';
 })
 export class AppComponent implements OnInit {
   selectedLanguage: string = '';
-  imageUrl = './assets/img/image.jpeg';
+  imageUrl = './assets/img/image.png';
 
   components!: MenuItem[];
   @ViewChild('particles') particles!: ElementRef;

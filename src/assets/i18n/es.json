@@ -4,6 +4,8 @@
   "bio": "Bio",
   "bio-content-1": "Soy un estudiante recién graduado de DAM que está buscando un empleo en el ecosistema de Android. Solo tengo 3 meses de experiencia profesional en Spring y Angular (también diseñé esta página entera solo con Angular), pero llevo ya un año y medio creando aplicaciones en Android, y estoy ya acostumbrado a su forma de trabajar.",
   "bio-content-2": "También disfruto escribiendo código limpio y estoy estudiando los principios Solid, porque opino que escribir código legible es todo menos una perdida de tiempo. Tengo mis proyectos en GitHub por si queréis echarle un vistazo.",
+  "curriculum-link": "./assets/pdf/es_djessyczaplicki.pdf",
+  "download-curriculum": "Descargar curriculum",
   "features": "Características",
   "fullname": "Djessy Czaplicki",
   "group-calendar": "Calendario de Grupo",

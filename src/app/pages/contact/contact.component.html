@@ -1,5 +1,5 @@
 <h1>Contact</h1>
-<div class="p-card p-6 m-5 flex flex-wrap">
+<div class="p-card p-6 lg:m-4 flex flex-wrap">
   <p class="col-12 md:col-6">
     <i class="pi pi-envelope"></i>Email:
     <a href="mailto:djessyczaplicki@gmail.com?subject=Portafolio feedback"
@@ -12,8 +12,7 @@
   </p>
   <p class="col-12 md:col-6">
     <i class="pi pi-linkedin"></i>Linkedin:
-    <a
-      href="https://www.linkedin.com/in/djessy-czaplicki-197762152/?originalSubdomain=es"
+    <a href="https://www.linkedin.com/in/djessy-czaplicki"
       >https://www.linkedin.com/in/djessy-czaplicki</a
     >
   </p>
@@ -22,5 +21,11 @@
     <a href="https://github.com/djessyczaplicki"
       >https://github.com/djessyczaplicki</a
     >
+  </p>
+  <p class="col-12 md:col-6">
+    <i class="pi pi-briefcase"></i>Curriculum:
+    <a [href]="'curriculum-link' | translate" target="_blank">{{
+      "download-curriculum" | translate
+    }}</a>
   </p>
 </div>
