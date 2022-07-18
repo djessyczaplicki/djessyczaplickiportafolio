@@ -28,7 +28,7 @@ export class ProjectsComponent {
       ],
       description: 'group-calendar-description',
       features: 'group-calendar-features',
-      github: 'https://github.com/djessyczaplicki/GroupCalendar',
+      github: 'https://github.com/djessyczaplicki/GroupCalendarAndroid',
     },
     {
       name: 'deliicious',
